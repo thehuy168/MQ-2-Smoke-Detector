@@ -1,16 +1,16 @@
 int val = 0 ; 
-int ledPin = 5; //D1
+int ledPin = 5; //D1 pin
  void setup()  
  {  
    Serial.begin(9600); // sensor buart rate  
-    // Led Pin Connected To D1 Pin    
+    // LedPin Connected To D1 pin    
    pinMode(ledPin,OUTPUT);
    digitalWrite(ledPin,LOW);
 
  }  
  void loop()   
  {  
-  val = digitalRead(12); // Sensor Digital output pin connected to D6  
+  val = digitalRead(12); // Sensor Digital output  connected to D6 pin
   Serial.println(val);  // see the value in serial m0nitor in Arduino IDE  
 
   delay(100);      // for timer  
